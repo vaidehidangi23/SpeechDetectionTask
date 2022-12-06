@@ -63,7 +63,7 @@ This app can be used for several purposes like to create notes.
 
 <img src='pic.png'>
 
-_To use this app, please refer to the [SpeechDetection](https://github.io/vaidehidangi23/SpeechDetectionTask)_
+_To use this app, please refer to [SpeechDetection](https://vaidehidangi23.github.io/SpeechDetectionTask/)_
 
 
 
@@ -81,6 +81,6 @@ _To use this app, please refer to the [SpeechDetection](https://github.io/vaideh
 
 Vaidehi Dangi - vaidehidangi23@gmail.com
 
-Project Link: [https://github.io/vaidehidangi23/SpeechDetectionTask](https://github.io/vaidehidangi23/SpeechDetectionTask)
+Project Link: [https://github.io/vaidehidangi23/SpeechDetectionTask/](https://vaidehidangi23.github.io/SpeechDetectionTask/)
 
 
