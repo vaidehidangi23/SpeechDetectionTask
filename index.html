@@ -12,21 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
 
     <style>
-        /* .line {
-            height: 1px;
-            background-color: black;
-            
-        }
-
-        .ls {
-            border-left: 1px solid #ffaa9f;
-            border-right: 1px solid #ffaa9f;
-            width: 2px;
-            float: left;
-            height: 495px;
-            margin-left: 40px;
-        } */
-        body {
+      body {
             background-color: #042743;
         }
 
@@ -38,27 +24,32 @@
             box-shadow: 0px 0px 5px 0px #888;
         }
 
-        #paper {
+        #paper::before {
             content: '';
-         
-            height: 10vh;
+            width: 2px;
+            height: 100%;
+            background-color: rgba(255, 0, 0, 0.6);
         }
 
         #paper {
             position: relative;
         }
 
-        
+        #paper::before {
+            position: absolute;
+            top: 0;
+            left: 40px;
+        }
 
         #paper {
             padding-top: 20px;
             padding-bottom: 40px;
-            min-height: 70vh;
-            background: repeating-linear-gradient(white 0px, white 24px, black 26px);
-           }
+        }
 
-        /* #pattern {
-        } */
+        #pattern {
+            min-height: 70vh;
+            background-image: repeating-linear-gradient(white 0px, white 24px, black 26px);
+        }
 
         #content {
             padding-top: 1px;
