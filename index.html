@@ -12,7 +12,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
 
     <style>
-      body {
+        /* .line {
+            height: 1px;
+            background-color: black;
+            
+        }
+        .ls {
+            border-left: 1px solid #ffaa9f;
+            border-right: 1px solid #ffaa9f;
+            width: 2px;
+            float: left;
+            height: 495px;
+            margin-left: 40px;
+        } */
+        body {
             background-color: #042743;
         }
 
@@ -66,7 +79,7 @@
 </head>
 
 <body>
-    <div class="container" id="paper2">
+    <div class="container">
         <div class="app">
             <h1 class="text-center mt-5" style="color:white">Speech Detection</h1>
             <div class="input-single">
@@ -80,52 +93,17 @@
             <p id="instructions" style="color: white">Press the <strong>Start Recognition</strong> button and allow
                 access.</p>
             <h2 class="text-center mt-5" style="color: white">Preview</h2>
-          
-                <div id="paper">
-                    <div id="pattern">
-                        <div id="content">
-                        </div>
+            <div id="paper">
+                <div id="pattern">
+                    <div id="content">
                     </div>
                 </div>
-                <div style="text-align:center">
-
-                    <button class="text-center mt-5" onclick="downloadFile()" style="color: white">Download</button>
-                </div>
-         
-          
+            </div>
         </div>
     </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
-
-    <script>
-
-function downloadFile(){
-    var textToSave = document.getElementById("paper");
-    textToSave.style.backgroundImage='linear-gradient(white 0px, white 24px, black 26px)';
-       
-    html2canvas(textToSave, {
-        onrendered: function (canvas) {
-            var myImage = canvas.toDataURL("image/png");
-            //create your own dialog with warning before saving file
-            //beforeDownloadReadMessage();
-            //Then download file
-            downloadURI("data:" + myImage, "yourImage.png");
-        }
-    });
-}
- 
-            function downloadURI(uri, name) {
-    var link = document.createElement("a");
-    link.download = name;
-    link.href = uri;
-    link.click();
-    //after creating link you should delete dynamic link
-    //clearDynamicLink(link); 
-}
-    </script>
     <!-- <script src="page.js"></script> -->
 </body>
 
