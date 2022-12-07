@@ -41,5 +41,5 @@ function startSpeech() {
 
 function pauseSpeech() {
     recognition.stop();
-    instructions.text('Voice recognition paused.');
+    instructions.innerText = 'Voice recognition paused.';
 }
